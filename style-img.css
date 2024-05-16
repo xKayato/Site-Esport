@@ -1,0 +1,164 @@
+.supporter {
+    width: 30%;
+    min-width: 450px;
+    max-width: 600px;
+    transition: transform .5s; /* temps de transition au hover */
+}
+
+.supporter:hover {
+    box-shadow: 0 1em 1em #000000;  
+    transform: scale(1.1); /* Angrandir l'image */
+}
+
+.promo {
+    width: 29%;
+    height: 40%;
+    transition: transform .5s;
+}
+
+.promo:hover {
+    box-shadow: 0 1em 1em #000000;
+    transform: scale(1.1); /* Agrandir pendant le hover */
+}
+
+/* Position: absolute; ==> placer où on veut sur l'écrant avec top/left/right... */
+
+.val .promo {
+    position: absolute;
+    top: 320px;
+    left: 69.5%;
+}
+
+.rl .promo {
+    position: absolute;
+    top: 770px;
+    left: 69.5%;
+}
+
+.fn .promo {
+    position: absolute;
+    top: 1170px;
+    left: 69.5%;
+}
+
+.kc .supporter {
+    position: absolute;
+    top: 5.5%;
+    left: 70%;
+}
+
+.mates .supporter {
+    position: absolute;
+    top: 42.5%;
+    left: 70%;
+}
+
+.vitality .supporter {
+    position: absolute;
+    top: 81%;
+    left: 70%;
+}
+
+.mini-logo {
+    width: 27px;
+    float: left;
+    border-radius: 100px;
+}
+
+.logo {
+    width: 200px; /* Taille des logos */
+}
+
+.center-img {
+    text-align: center;
+}
+
+.joueurs-img {
+    max-height: 178px;
+    max-width: 250px;
+    margin-left: 25px;
+    transition: transform .4s;
+}
+
+.joueurs-img:hover {
+    box-shadow: 0 1em 1em #000000;  
+    transform: scale(1.2); /* Agrandir pendant le hover */
+}
+
+.banner {
+    width: 100%; /* Largeur de la banniere toujours de la taille de l'écran */
+    box-shadow: 0 1em 1em #000000;  
+    padding-top: 1px;
+}
+
+.jeu-selec img {
+    width: 1300px;
+}
+.valoVCT img, .esport img{
+    width: 45%;
+    vertical-align: middle;
+    padding-right: 20px;
+}
+
+@media screen and (min-width: 2000px) { /* pour les écrans 2k */
+    .promo {
+        width: 24%;
+        height: 24%;
+        transition: transform .5s;
+    }
+
+    .val .promo {
+        position: absolute;
+        top: 360px;
+        left: 69.5%;
+    }
+    
+    .rl .promo {
+        position: absolute;
+        top: 830px;
+        left: 69.5%;
+    }
+    
+    .fn .promo {
+        position: absolute;
+        top: 1240px;
+        left: 69.5%;
+    }
+
+    .kc .supporter {
+        position: absolute;
+        top: 5.5%;
+        left: 70%;
+    }
+    
+    .mates .supporter {
+        position: absolute;
+        top: 44%;
+        left: 70%;
+    }
+    
+    .vitality .supporter {
+        position: absolute;
+        top: 84.8%;
+        left: 70%;
+    }
+}
+
+@media screen and (max-width: 1200px) { /* Téléphone */
+    .supporter, .promo{
+        display: none;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .jeu-selec img{
+        width: 100%;
+    }
+    .valoVCT img, .esport img{
+        width: 200px;
+        vertical-align: middle;
+        padding-bottom: 10px;
+    }
+}

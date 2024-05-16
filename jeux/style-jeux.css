@@ -1,0 +1,50 @@
+.jeux a {
+    text-decoration: none;
+    color: #ffffff; /* Couleur du texte en blanc */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.jeux a:hover {
+    color: #64b5f6; /* Couleur du texte en bleu en hover */
+}
+
+.jeux p {
+    margin-right: 32%;
+}
+
+.val h2 {
+    background-color: #8e0000; /* Couleur de fond pour le h2 */
+    box-shadow: 0 0.2em 0.5em #a30101; /* Effet d'ombre/neon sur le h2 */
+}
+
+.jeux .val {
+    margin-bottom: 9%; 
+}
+
+.rl h2 {
+    background-color: #075ee9; /* Couleur de fond pour le h2*/
+    box-shadow: 0 0.2em 0.5em #0864f8; /* Effet d'ombre/neon sur le h2 */
+}
+
+.jeux .rl {
+    margin-bottom: 7%;
+}
+
+.fn h2 {
+    background-color: #04a7af; /* Couleur de fond pour le h2 */
+    box-shadow: 0 0.2em 0.5em #13d5db; /* Effet d'ombre/neon sur le h2 */
+}
+
+.jeux .fn {
+    margin-bottom: 10%;
+}
+
+@media screen and (max-width: 1200px) {
+    .jeux p,
+    .jeu-selec p {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 5px;
+    }
+}

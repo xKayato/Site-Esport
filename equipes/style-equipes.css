@@ -1,0 +1,69 @@
+.equipes {
+    position: relative;
+}
+
+.equipes p { /* Les paragraphes dans les class équipes */
+    margin-right: 32%;
+}
+
+.equipes a {
+    text-decoration: none; /* Enlever soulignement ect des liens */
+    color: #ffffff;
+    font-weight: bold; /* Texte en gras */
+    transition: color 0.3s; /* Transition de couleur */
+}
+
+.equipes a:hover {
+    color: #64b5f6; /* Couleur du texte en bleu lorsqu'ils sont hover */
+}
+
+/* pour chaque équipe */
+
+.kc h2 {
+    background-color: #00BFFF;
+    box-shadow: 0 0.2em 0.5em #17c3fc; /* Ombre/néon */
+}
+
+.kc {
+    margin-bottom: 7%;
+}
+
+.mates h2 {
+    background-color: #ea82d5;
+    box-shadow: 0 0.2em 0.5em #eb8ed8; /* Ombre/néon */
+}
+
+.mates {
+    margin-bottom: 5.5%;
+}
+
+.vitality h2 {
+    background-color: #becb09; 
+    box-shadow: 0 0.2em 0.5em #dceb11; /* Ombre/néon */
+}
+
+.vitality {
+    margin-bottom: 8%;
+}
+
+@media screen and (min-width: 2000px) {
+    .kc {
+        margin-bottom: 9%;
+    }
+
+    .mates {
+        margin-bottom: 8%;
+    }
+    .vitality {
+        margin-bottom: 9%;
+    }
+}
+
+/* Media queries pour les téléphones */
+@media screen and (max-width: 1200px) {
+    .equipes p {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 5px; 
+}
+}
